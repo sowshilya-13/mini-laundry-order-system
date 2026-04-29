@@ -1,10 +1,6 @@
-# 🧺 Mini Laundry Order Management System
-
+🧺 Mini Laundry Order Management System
 A simple web-based application built using Flask to manage laundry orders, billing, and tracking.
-
----
-
-## 🚀 Features
+Features
 
 * Create laundry orders
 * Generate unique Order IDs
@@ -20,53 +16,44 @@ A simple web-based application built using Flask to manage laundry orders, billi
 * Estimated delivery date
 * SQLite database for storage
 
----
-
-## 🛠 Tech Stack
+🛠 Tech Stack
 
 * Python (Flask)
 * HTML (Templates)
 * SQLite (Database)
 
----
+⚙️ Setup Instructions
 
-## ⚙️ Setup Instructions
-
-### Install dependencies
+Install dependencies
 
 pip install -r requirements.txt
 
-### Run the project
+Run the project
 
 python3 app.py
 
-### Open in browser
+Open in browser
 
 http://localhost:5001
 
----
+📸 Screenshots
 
-## 📸 Screenshots
-
-### 🏠 Home Page
+🏠 Home Page
 
 ![Home](screenshots/home.png)
 
-### ➕ Create Order
+➕ Create Order
 
 ![Create](screenshots/create.png)
 
-### 📋 Orders Page
+📋 Orders Page
 
 ![Orders](screenshots/orders.png)
 
-### 📊 Dashboard
+📊 Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
-
----
-
-## 🤖 AI Usage Report
+🤖 AI Usage Report
 
 I used ChatGPT to:
 
@@ -76,23 +63,19 @@ I used ChatGPT to:
 * Implement database functionality
 * Debug and fix errors
 
-### Improvements made manually:
+Improvements made manually:
 
 * Fixed logic issues
 * Added delete functionality
 * Improved UI flow
 * Organized project structure
 
----
-
-## ⚖️ Tradeoffs
+⚖️ Tradeoffs
 
 * Used SQLite instead of full-scale database
 * Simple UI instead of advanced frontend
 
----
-
-## 🔮 Future Improvements
+🔮 Future Improvements
 
 * Add authentication
 * Deploy application online
@@ -100,15 +83,11 @@ I used ChatGPT to:
 * Add advanced search
 * Add notifications
 
----
-
-## 📌 Note
+📌 Note
 
 This application runs locally.
 For demo, please refer to the screenshots above.
 
----
-
-## 🔗 GitHub Repository
+🔗 GitHub Repository
 
 https://github.com/sowshilya-13/mini-laundry-order-system
