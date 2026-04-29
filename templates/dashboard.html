@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f8fb;
+            padding: 30px;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 15px auto;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dashboard</h2>
+
+    <div class="card">
+        <h3>Total Orders</h3>
+        <p>{{ total_orders }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Revenue</h3>
+        <p>₹{{ total_revenue }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Orders Per Status</h3>
+        {% for status, count in status_count.items() %}
+            <p>{{ status }}: {{ count }}</p>
+        {% endfor %}
+    </div>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

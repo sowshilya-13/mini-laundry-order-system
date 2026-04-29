@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Order</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f8fb;
+            padding: 30px;
+        }
+        form {
+            background: white;
+            padding: 25px;
+            width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Create Laundry Order</h2>
+
+    <form method="POST">
+        <label>Customer Name</label>
+        <input type="text" name="customer_name" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" required>
+
+        <label>Garment</label>
+        <select name="garment" required>
+            {% for garment, price in garment_prices.items() %}
+                <option value="{{ garment }}">{{ garment }} - ₹{{ price }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" min="1" required>
+
+        <button type="submit">Create Order</button>
+    </form>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
