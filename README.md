@@ -1,58 +1,114 @@
-# Mini Laundry Order Management System
+# 🧺 Mini Laundry Order Management System
 
-## Project Overview
-This is a simple Laundry Order Management System built using Flask. It helps a dry cleaning store manage orders, billing, and status tracking.
+A simple web-based application built using Flask to manage laundry orders, billing, and tracking.
 
-## Features
-- Create Order
-- Generate Unique Order ID
-- Calculate Billing
-- Update Order Status
-- View Orders
-- Search and Filter Orders
-- Dashboard (Total Orders, Revenue, Status Count)
-- Delete Order
-- Estimated Delivery Date
-- SQLite Database
+---
 
-## Tech Stack
-- Python
-- Flask
-- HTML
-- SQLite
+## 🚀 Features
 
-## Setup Instructions
+* Create laundry orders
+* Generate unique Order IDs
+* Calculate total billing
+* Update order status (RECEIVED → PROCESSING → READY → DELIVERED)
+* View and filter orders
+* Dashboard with:
+
+  * Total orders
+  * Total revenue
+  * Orders per status
+* Delete orders
+* Estimated delivery date
+* SQLite database for storage
+
+---
+
+## 🛠 Tech Stack
+
+* Python (Flask)
+* HTML (Templates)
+* SQLite (Database)
+
+---
+
+## ⚙️ Setup Instructions
 
 ### Install dependencies
+
 pip install -r requirements.txt
 
 ### Run the project
+
 python3 app.py
 
 ### Open in browser
-[http://127.0.0.1:5001](http://localhost:5001)
 
-## Screenshots
+http://localhost:5001
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
 
 ![Home](screenshots/home.png)
+
+### ➕ Create Order
+
 ![Create](screenshots/create.png)
+
+### 📋 Orders Page
+
 ![Orders](screenshots/orders.png)
+
+### 📊 Dashboard
+
 ![Dashboard](screenshots/dashboard.png)
 
-## AI Usage Report
+---
+
+## 🤖 AI Usage Report
 
 I used ChatGPT to:
-- Understand the problem
-- Generate Flask backend code
-- Build HTML pages
-- Add database functionality
-- Fix errors and improve features
 
-## Tradeoffs
-- Used SQLite instead of full database
-- Simple UI (not advanced frontend)
+* Understand the requirements
+* Generate backend Flask code
+* Build HTML templates
+* Implement database functionality
+* Debug and fix errors
 
-## Future Improvements
-- Add authentication
-- Deploy online
-- Improve UI
+### Improvements made manually:
+
+* Fixed logic issues
+* Added delete functionality
+* Improved UI flow
+* Organized project structure
+
+---
+
+## ⚖️ Tradeoffs
+
+* Used SQLite instead of full-scale database
+* Simple UI instead of advanced frontend
+
+---
+
+## 🔮 Future Improvements
+
+* Add authentication
+* Deploy application online
+* Improve UI with React
+* Add advanced search
+* Add notifications
+
+---
+
+## 📌 Note
+
+This application runs locally.
+For demo, please refer to the screenshots above.
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/sowshilya-13/mini-laundry-order-system
