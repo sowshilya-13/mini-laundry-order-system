@@ -34,7 +34,7 @@ python3 app.py
 
 Open in browser
 
-http://localhost:5001
+http://127.0.0.1:5001/
 
 📸 Screenshots
 
